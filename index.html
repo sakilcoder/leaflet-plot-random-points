@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Title-->
+    <title>UNIGIS Salzburg: TAREA 1</title>
+   
+    <!--Metadata-->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="UNIGIS Salzburg, application development, javascript" /> 
+    <meta name="author" content="Steven Mora" />
+    <meta name="description" content="Assignment: JavaScript"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      
+    <!--References to resources-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+   
+  </head>
+  <body>
+ 
+    <form id="readInput">
+      Escribe el numero de puntos: <input type="number" id="points" max="500" min="0"/>
+      <input type="button" value="plot" onclick="generatePointsAndUpdateMap()" />
+    </form>
+    Count of 
+    <span id="counts"></span>
+    <div id="mapid" style="width: 100%; height: 400px;"></div>
+    <script src="script.js"></script>   
+  </body>  
+</html>
